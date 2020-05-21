@@ -3,6 +3,8 @@
 #include <cstdlib>
 using namespace std;
 
+
+/// Find Max Pair Wise Product
 long long findMaxPairWiseProduct(const vector<int> &numbers)
 {
     // Create a vairable and intialize
@@ -18,12 +20,16 @@ long long findMaxPairWiseProduct(const vector<int> &numbers)
     }
     return maxProduct;
 }
-int main()
-{
 
-    //Stress Test
-    // Infinite While Loop
-    while (true)
+/// Fast Algorithm: Find Max Pair Wise Product
+long long findMaxPairWiseProductUsingFasterAlgo(const vector<int> &numbers)
+{
+   
+}
+
+///////  Stress Test
+void stressTestFindMaxPairWiseProduct(){
+while (true)
     {
         // Create random value of n
         int randomIndex = rand() % 10 + 2;
@@ -40,7 +46,13 @@ int main()
         cout << "\n"
              << "Max Pairwise Product: " << generatedMaxProduct << endl;
     }
+}
 
+int main()
+{
+
+    //Call Stress Test method
+    stressTestFindMaxPairWiseProduct();
     // Call the actual method
     int n = 0;
     cin >> n;
